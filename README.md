@@ -85,8 +85,7 @@ chat-application/
 
 1. Register a new user account.
 2. Login with your credentials.
-3. Join existing chat rooms or create a new one.
-4. Start chatting in real-time!
+3. Start chatting in real-time!
 
 ## Screenshots
 
@@ -104,9 +103,6 @@ Include screenshots of your app here, for example:
 4. Push to the branch (`git push origin feature/YourFeature`).
 5. Open a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ## Acknowledgments
 
