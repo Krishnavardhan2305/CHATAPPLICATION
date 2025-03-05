@@ -87,14 +87,6 @@ chat-application/
 2. Login with your credentials.
 3. Start chatting in real-time!
 
-## Screenshots
-
-Include screenshots of your app here, for example:
-
-- **Login Page**
-- **Chat Room**
-- **Private Messaging**
-
 ## Contributing
 
 1. Fork the project.
