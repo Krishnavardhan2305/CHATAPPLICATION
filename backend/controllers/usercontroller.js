@@ -1,11 +1,11 @@
-import User from "../models/userModel.js"; 
-import bcrypt from "bcryptjs"; 
+import User from "../models/userModel.js";
+import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 export const register = async (req, res) => {
     try {
         const { fullName, username, password, confirmPassword, gender } = req.body;
-       // console.log(fullName, username, password, confirmPassword, gender)
+        // console.log(fullName, username, password, confirmPassword, gender)
         if (!fullName || !username || !password || !confirmPassword || !gender) {
             return res.status(400).json({ message: "Please fill all the fields" });
         }
@@ -72,10 +72,11 @@ export const login = async (req, res) => {
         const token = jwt.sign(tokenData, process.env.JWT_SECRET_KEY, { expiresIn: "1d" });
 
         // Set cookie
-        res.cookie("token", token, { 
-            maxAge: 1 * 24 * 60 * 60 * 1000, 
-            httpOnly: true, 
-            sameSite: "None" 
+        res.cookie("token", token, {
+            maxAge: 1 * 24 * 60 * 60 * 1000,
+            httpOnly: true,
+            sameSite: "None",
+            secure: true  
         });
 
         // console.log("Response Headers:", res.getHeaders());
