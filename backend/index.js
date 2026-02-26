@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 8080;
 const corsOption = {
   origin: [
     "http://localhost:5173",
-    "https://chatapplication-ni0a.onrender.com"
+     "https://chatapplication-mu-ten.vercel.app"
   ],
   credentials: true,
 };
