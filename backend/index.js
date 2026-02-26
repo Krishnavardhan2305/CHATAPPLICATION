@@ -15,7 +15,10 @@ const PORT = process.env.PORT || 8080;
 
 // Middleware
 const corsOption = {
-  origin: "http://localhost:5173",
+  origin: [
+    "http://localhost:5173",
+    "https://chatapplication-ni0a.onrender.com"
+  ],
   credentials: true,
 };
 app.use(cors(corsOption));
