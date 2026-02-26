@@ -22,7 +22,7 @@ Make sure you have the following installed on your system:
 
 - Node.js
 - MongoDB
-- npm or yarn
+- npm 
 
 ## Installation
 
