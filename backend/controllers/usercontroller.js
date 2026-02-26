@@ -1,5 +1,5 @@
-import User from "../models/userModel.js"; // Now correctly importing
-import bcrypt from "bcryptjs"; // Fixed typo
+import User from "../models/userModel.js"; 
+import bcrypt from "bcryptjs"; 
 import jwt from "jsonwebtoken";
 
 export const register = async (req, res) => {
